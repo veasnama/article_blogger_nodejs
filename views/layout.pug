@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="bower_files/bootstrap/dist/css/bootstrap.css")
+  body
+    nav.navbar.navbar-expand-lg.bg-light
+      .container
+        a.navbar-brand(href="#")
+        button.navbar-toggler(
+          type="button",
+          data-bs-toggle="collapse",
+          data-bs-target="#navbarScroll",
+          aria-controls="navbarScroll",
+          aria-expanded="false",
+          aria-label="Toggle navigation"
+        )
+        span.navbar-toggler-icon
+        #navbarScroll.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll(
+          style="--bs-scroll-height: 100px"
+        )
+          li.nav-item
+          a.nav-link.active(aria-current="page", href="#") Home
+          li.nav-item
+          a.nav-link.disabled Add article
+          li.nav-item
+          a.nav-link.disabled Register
+          li.nav-item
+          a.nav-link.disabled Login
+          li.nav-item
+          a.nav-link.disabled Logout
+        form.d-flex(role="search")
+          input.form-control.me-2(
+            type="search",
+            placeholder="Search",
+            aria-label="Search"
+          )
+          button.btn.btn-outline-success(type="submit") Search
+    .container
+      block content
+      br
+      hr
+      footer
+      p CopyRightt &copy;2022
