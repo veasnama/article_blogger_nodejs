@@ -1,0 +1,31 @@
+extends layout
+block content
+  form
+  .form-group
+    label(for="exampleInputEmail1") Username
+    input#exampleInputEmail1.form-control(
+      type="email",
+      aria-describedby="emailHelp",
+      placeholder="Enter username"
+    )
+  .form-group
+    label(for="exampleInputEmail1") Email
+    input#exampleInputEmail1.form-control(
+      type="email",
+      aria-describedby="emailHelp",
+      placeholder="Enter email"
+    )
+  .form-group
+    label(for="exampleInputPassword1") Password
+    input#exampleInputPassword1.form-control(
+      type="password",
+      placeholder="Password"
+    )
+
+  .form-group
+    label(for="exampleInputPassword1") Confirm Password
+    input#exampleInputPassword1.form-control(
+      type="password",
+      placeholder="Confirm Password"
+    )
+  button.btn.mt-4.mb-4.btn-primary(type="submit") Submit
